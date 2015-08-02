@@ -94,39 +94,67 @@ textarea {
 /* ==========================================================================
    Author's custom styles ALPHABETA
    ========================================================================== */
+/*******HEADER-START*******/
 header{
     border: 1px solid blue;
     width: 100%;
-    height: 170px;
+    height: 190px;
 }
 nav{
-    border: 1px solid red;
+    /*border: 1px solid red;*/
     height: 130px;
-    margin-top: 10px;
+    margin-top: 30px;
     padding-top: 30px;
-
 }
 nav ul{
-    border: 1px solid green;
+    /*border: 1px solid green;*/
     height: 130px;
 }
-nav ul li{
+/*nav ul li{
     border: 1px solid black;
     list-style: none;
     width: 90px;
     height: 90px;
     display: inline-block;
     margin-right: 25px;
-}
+}*/
 #special{
+    border: 1px solid black;
+    list-style: none;
+    display: inline-block;
+    margin-right: 25px;
     margin-left: 20px;
     margin-right: 300px;
     width: 125px;
+    vertical-align: middle;
     height: 125px;
 }
+.menu-link{
+    border: 2px dashed purple;
+    border: 1px solid black;
+    list-style: none;
+    width: 90px;
+    height: 90px;
+    display: inline-block;
+    vertical-align: middle;
+    margin-right: 25px;
+}
+/*******HEADER-END*******/
 
-
-
+/*******TITLE-START*******/
+.title{
+    border:1px solid black;
+    height: 200px;
+    width: 100%;
+}
+.title h1{
+    border:1px solid red;
+    margin: 0 auto;
+    max-width:800px;
+    text-align: center;
+    margin-top:50px;
+}
+/*******TITLE-END*******/
 
 
 
