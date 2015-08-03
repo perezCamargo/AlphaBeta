@@ -128,24 +128,32 @@ nav ul{
     width: 95px;
     height: 92px;
 }
-#special{
+#special-menu{
     margin-left: 400px;
 }
 .menu-link{
-    border: 1px solid black;
-    list-style: none;
-    width: 90px;
+    /*border: 1px solid black;*/
+    text-align: center;
+    width: 110px;
     height: 90px;
     display: inline-block;
     vertical-align: middle;
     margin-right: 25px;
     margin-top: 20px;
 }
+.menu-image{
+    width: 90px;
+    height: 90px;
+}
+.menu-item-special{
+    width: 110px;
+    height: 90px;
+}
 /*******HEADER-END*******/
 
 /*******TITLE-START*******/
 .title{
-    /*border:1px solid black;*/
+    border:1px solid black;
     height: 200px;
     width: 100%;
 }
@@ -159,7 +167,7 @@ nav ul{
 }
 /*******TITLE-END*******/
 
-#ff{
+#slider{
     /*border:1px solid red;*/
     height: 700px;
     width: 100%;
