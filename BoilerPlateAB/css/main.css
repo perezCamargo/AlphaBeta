@@ -38,7 +38,7 @@ html {
  * A better looking default horizontal rule
  */
 
-hr {
+/*hr {
     display: block;
     height: 1px;
     border: 0;
@@ -46,7 +46,7 @@ hr {
     margin: 1em 0;
     padding: 0;
 }
-
+*/
 /*
  * Remove the gap between audio, canvas, iframes,
  * images, videos and the bottom of their containers:
@@ -96,41 +96,45 @@ textarea {
    ========================================================================== */
 /*******HEADER-START*******/
 header{
-    border: 1px solid blue;
+    /*border: 0px solid transparent;*/
     width: 100%;
-    height: 190px;
+    height: 240px;
+    background: url(../img/ABheader.png) 0% 0 no-repeat fixed;
 }
 nav{
     /*border: 1px solid red;*/
     height: 130px;
-    margin-top: 30px;
-    padding-top: 30px;
+    padding-top: 100px;
 }
 nav ul{
-    /*border: 1px solid green;*/
+    border: 1px solid green;
     height: 130px;
 }
-/*nav ul li{
-    border: 1px solid black;
+#logo{
+    /*border: 1px solid black;*/
+    position: fixed;
+    top: 20px;
+    left: 20px;
     list-style: none;
-    width: 90px;
-    height: 90px;
-    display: inline-block;
-    margin-right: 25px;
-}*/
-#special{
-    border: 1px solid black;
-    list-style: none;
-    display: inline-block;
-    margin-right: 25px;
+    border-radius: 100px;
+    background: rgba(255,255,255,0.5);
+    text-align: center;
+    width: 130px;
+    height: 135px;
+    /*display: inline-block;
     margin-left: 20px;
     margin-right: 300px;
-    width: 125px;
-    vertical-align: middle;
-    height: 125px;
+    vertical-align: middle;*/
+}
+#logo img{
+    margin-top: 21px;
+    width: 95px;
+    height: 92px;
+}
+#special{
+    margin-left: 400px;
 }
 .menu-link{
-    border: 2px dashed purple;
     border: 1px solid black;
     list-style: none;
     width: 90px;
@@ -138,12 +142,13 @@ nav ul{
     display: inline-block;
     vertical-align: middle;
     margin-right: 25px;
+    margin-top: 20px;
 }
 /*******HEADER-END*******/
 
 /*******TITLE-START*******/
 .title{
-    border:1px solid black;
+    /*border:1px solid black;*/
     height: 200px;
     width: 100%;
 }
@@ -156,6 +161,11 @@ nav ul{
 }
 /*******TITLE-END*******/
 
+#ff{
+    /*border:1px solid red;*/
+    height: 700px;
+    width: 100%;
+}
 
 
 
