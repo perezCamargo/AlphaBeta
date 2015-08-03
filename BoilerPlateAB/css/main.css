@@ -95,6 +95,7 @@ textarea {
 /* ==========================================================================
    Author's custom styles ALPHABETA
    ========================================================================== */
+
 /*******HEADER-START*******/
 header{
     /*border: 0px solid transparent;*/
@@ -179,7 +180,7 @@ nav ul{
 }
 /*******SLIDER-END*******/
 
-/*******TEXTO-START*******/
+/*******TEXT-START*******/
 .section-text{
     width: 70%;
     margin: 0 auto;
@@ -193,7 +194,24 @@ nav ul{
     font-weight: bold;
     text-align: center;
 }
-/*******TEXTO-END*******/
+/*******TEXT-END*******/
+
+/*******RIGHTS-START*******/
+#section-footer{
+    margin-top: 170px;
+    margin-bottom: 20px;
+    font-size: 14px;
+    font-weight: bold;
+    text-align: center;
+}
+
+#section-footer span, a{
+    display: inline-block;
+    vertical-align: bottom;
+    margin-right: 15px;
+}
+
+/*******RIGHTS-END*******/
 
 
 
