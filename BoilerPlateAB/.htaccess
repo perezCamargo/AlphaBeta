@@ -319,26 +319,20 @@ AddDefaultCharset utf-8
 
 <IfModule mod_rewrite.c>
 
-    # (1)
+    <IfModule mod_negotiation.c>
+        Options -MultiViews
+    </IfModule>
+
     RewriteEngine On
 
-    # (2)
-    Options +FollowSymlinks
+    # Redirect Trailing Slashes If Not A Folder...
+    RewriteCond %{REQUEST_FILENAME} !-d
+    RewriteRule ^(.*)/$ /$1 [L,R=301]
 
-    # (3)
-    # Options +SymLinksIfOwnerMatch
-
-    # (4)
-    # RewriteBase /
-
-    # (5)
-    # RewriteOptions <options>
-
-    # (6)
-    RewriteCond %{HTTPS} =on
-    RewriteRule ^ - [env=proto:https]
-    RewriteCond %{HTTPS} !=on
-    RewriteRule ^ - [env=proto:http]
+    # Handle Front Controller...
+    RewriteCond %{REQUEST_FILENAME} !-d
+    RewriteCond %{REQUEST_FILENAME} !-f
+    RewriteRule ^ index.php [L]
 
 </IfModule>
 
